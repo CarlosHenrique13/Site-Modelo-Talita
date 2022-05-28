@@ -1,0 +1,89 @@
+/* ==============
+    Home Section 
+   ==============
+*/
+div#direito_home{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+}  
+div#esquerdo_home {
+    position: relative;
+    width: 50%;
+    height: 40%;
+    float: left;  
+}
+div#esquerdo_home img{
+    position: relative;
+    width: 50%;
+    border-radius: 5px;
+}
+div#esquerdo_home img:hover{
+    width: 60%;
+    box-shadow: 5px 5px rgb(0,0,0,0.3);
+}
+/* ========
+     Body 
+   ========
+*/
+h2{
+    text-align: center;
+}
+/* ============
+       Bock
+   ============
+*/
+.book {
+    border: none;
+    background: transparent;
+    width: 40%;
+}
+.book img{
+    border-radius: 5px;
+    width: 95%
+}
+.book img:hover{
+    width: 100%;
+    box-shadow: 5px 5px rgb(0,0,0,0.3);
+}
+
+/* ===============
+    Redimensionar
+   ===============
+*/
+@media only screen and (min-width: 900px){
+    .book{
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 700px){
+    .book{
+        width: 40%;
+    }
+    div#direito_home{
+        width: 100%;
+        height: auto;
+    }
+    div#esquerdo_home{
+        width: 100%;
+    }
+    div#esquerdo_home img{
+        margin-top: 5%;
+        width: 80%;
+        height: auto;
+    }
+    div#esquerdo_home img:hover{
+        width: 85%;
+    }
+}
+table{
+    margin: auto;
+    text-align: left;
+}
+table a{
+    color:black;
+}
+table a:hover{
+    color: white;
+}
