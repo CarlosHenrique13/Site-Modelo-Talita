@@ -1,3 +1,9 @@
+/*=====================
+By Carlos Henrique A. Santos
+Github: https://github.com/CarlosHenrique13/
+License MIT
+A companha o Termos de uso do Site.
+===================== */
 
 
 
