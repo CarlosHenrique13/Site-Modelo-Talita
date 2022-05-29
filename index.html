@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Port. Talita</title>
 
+    <!-- Slick Externo -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <!-- Slick Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+
+   
+    <!-- Conteudos Internos -->
     <link rel="shortcut icon" href="./icons/Logo-Portifolio-Talita.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <script src="animacao.js"></script>
 
+   
+    
 </head>
 <body>
     <!-- Menu -->
@@ -31,10 +43,8 @@
     <!-- Home -->
     <section id="Home">
         <h2>Bem-Vindo</h2>
-        <p>
-            Esse site e usado para mostar meu perfil como<br>
-            modelo, com fotos de book, trabalhos fotograficos e video.
-        </p>
+        <p>Esse site e usado para mostar meu perfil como<br>
+            modelo, com fotos de book, trabalhos fotograficos e video.</p>
 
         <div id="esquerda">
             <!-- Informação do Perfil -->
@@ -49,7 +59,7 @@
                     <b>Peso:</b> 51 kg
                 </p>
 
-                <div id="social">
+                <div>
                     <a href="">
                         <img class="ico" src="./icons/intagram-logo.png" alt="Instagram Talita">
                     </a>
@@ -71,11 +81,31 @@
 
         <article id="direita">
             <!-- Imagens Lateral-->
-            <div id="imagens-home">
+            <div id="imagens-home" class="mobile2" >
                 <img src="img/imagem loira rosto.jpg" alt="" onclick="Zoom('img1')" id="img1">
                 <img src="img/imagem mulher loira modelo.jpg" alt="">
                 <img src="img/imagem mulher loira de braços cruzados.jpg" alt="">
             </div>
+
+            <div class="carousel">
+                <img src="img/imagem loira rosto.jpg" alt="" onclick="Zoom('img1')" id="img1">
+                <img src="img/imagem mulher loira modelo.jpg" alt="">
+                <img src="img/imagem mulher loira de braços cruzados.jpg" alt="">
+            </div>
+            <script>
+                var largura = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+                $('.carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    
+                });
+            
+            </script>
         </article>
 
     </section>
@@ -87,29 +117,41 @@
 
         <hr/>
         <section>
-            <div class="book">
+            <div>
                 <img src="./img/img 07.jpg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/img 06.jpg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/img 08.jpg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/img 04.jpg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/ft 07.jpeg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/ft 01.jpeg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/ft 05.jpeg" alt="">
             </div>
-            <div class="book">
+            <div>
                 <img src="./img/ft 03.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/img 05.jpg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 02.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 08.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 04.jpeg" alt="">
             </div>
         </section>
 
@@ -208,6 +250,9 @@
         <a href="./termos.html">Termos de Uso</a>
         <a class="assinatura" href="">By Carlos Henrique A. Santos</a>
     </footer>
+</body>
+</html>
+
 <!-- 
     ================================================
         By Carlos Henrique A. Santos
@@ -216,5 +261,3 @@
         A companha o Termos de uso do Site.
     ================================================= 
 -->
-</body>
-</html>

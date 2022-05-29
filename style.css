@@ -54,7 +54,7 @@ h2,h3 {
     color: var(--cor-white);
 }
 h2:hover, h3:hover,
-section#Home article#informacao div#social a:hover {
+section#Home article#informacao div a:hover {
     text-shadow:  0.4em 0.2em 0.3em var(--cor-opacidade);
 }
 h3 {
@@ -85,12 +85,12 @@ a:hover {
     color: white;
     font-size: large;
 }
-img{
+img, .carousel img{
     text-align: center;
     border-radius: 5px;
     box-shadow:  0.5em 0.5em 0.5em var(--cor-opacidade1);
 }
-img:hover {
+img:hover,.carousel img:hover {
     box-shadow:  0.5em 0.5em 0.5em var(--cor-opacidade);
 	-moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
@@ -114,6 +114,12 @@ img:hover {
     color: var(--cor-menu);
     font-weight: bold;
     font-family: 'Philosopher', sans-serif;
+}
+.carousel {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    border-radius: 5px;
 }
 /* MENU */
 nav {
@@ -162,8 +168,9 @@ section#Home article#informacao b {
 section#Home article#informacao p{
     text-align: left;
 }
-section#Home div#imagens-home  img{
+section#Home article#direita div#imagens-home  img{
     width: 28%;
+    height: 400px;
     margin-left: 3%;
 }
 
@@ -249,6 +256,7 @@ section#Videos div article iframe:hover {
 section#Contato article {
     width: 30%;
     display: inline-block;
+    word-wrap: break-word;
     padding-left: 8%;
 }
 section#Contato article a {
@@ -280,6 +288,7 @@ section#Contato div#contato-frase img{
 }
 section#Contato div#contato-frase div#frase {
     position: absolute;
+    width: 80%;
     right: 3%;
     top: 0;
 }

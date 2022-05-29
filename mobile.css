@@ -5,12 +5,66 @@ License MIT
 A companha o Termos de uso do Site.
 ===================== */
 
+.mobile{
+    display: none;
+}
+.mobile img {
+    display: none;
+}
 /* Redimensionamento Mobile*/
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 749px) {
+    
+    section#Home article#informacao div{
+        word-wrap: break-word;
+    }section#Home article#informacao div img{
+        width: 20%;
+    }section#Home article#informacao div a:hover {
+        font-size: medium;
+    }section#Book section div{
+        width: 25%;
+        height: 10px;
+        padding: 3%;
+    }section#Book section div img{
+        height: auto;
+        height: 250px;
+    }.mobile2{
+        display: none;
+    }.mobile img{
+        display: inline-block;
+    }
+    section#Book section#amplo section#quadrado {
+        display: none;
+    }section#Book section#amplo section#lateral{
+        width: 100%;
+        display: block;
+    }section#Videos div article {
+        width: 90%;
+    }section#Contato article a b{
+        padding: 3%;
+        word-wrap: break-word;
+        font-size: var(--paragrafo-size);
+    }section#Contato div#contato-frase div#frase p{
+        font-size: large;
+    }section#Contato div#contato-frase img{
+        width: 90%;
+        height: 200px;
+    }section#Contato article a:hover{
+        font-size: large;
+    }footer{
+        height: 130px;
+    }
 
 }
 
-/* Redimensionamento Tablet */
-@media screen and (min-width: 700px) {
-
+/* Tablet */
+@media screen and (min-width: 750px) {
+    .carousel{
+        display: none;
+    }.mobile2{
+        display: inline-block;
+    }.mobile2 img{
+        display: inline-block;
+    }.mobile{
+        display: none;
+    }
 }
