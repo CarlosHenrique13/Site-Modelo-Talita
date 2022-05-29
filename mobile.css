@@ -5,15 +5,26 @@ License MIT
 A companha o Termos de uso do Site.
 ===================== */
 
+/*===============
+REDIMENSIONAMENTO
+===============*/
+
 .mobile{
     display: none;
 }
 .mobile img {
     display: none;
 }
-/* Redimensionamento Mobile*/
+
+/* Pc tela Pequena */
 @media screen and (max-width: 749px) {
-    
+    .logo{
+        width: 20%;
+    }
+    nav{
+        width: 60%;
+        text-align: center;
+    }
     section#Home article#informacao div{
         word-wrap: break-word;
     }section#Home article#informacao div img{
@@ -25,7 +36,6 @@ A companha o Termos de uso do Site.
         height: 10px;
         padding: 3%;
     }section#Book section div img{
-        height: auto;
         height: 250px;
     }.mobile2{
         display: none;
@@ -51,14 +61,58 @@ A companha o Termos de uso do Site.
     }section#Contato article a:hover{
         font-size: large;
     }footer{
-        height: 130px;
+        height: 150px;
+        text-align: center;
+    }footer a {
+        width: 25%;
+    }.assinatura {
+        width: 100%;
     }
 
 }
 
+/* Tablets de tala pequena */
+@media screen and (max-width: 600px){
+    .logo{
+        width: 100%;
+    }nav{
+        width: 100%;
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+    }section#Home div#esquerda{
+        width: 100%;
+        padding-bottom: 5%;
+    }section article#direita{
+        width: 100%;
+        margin: auto;
+    }.carousel{
+        width: 80%;
+    }section#Book section div{
+        width: 40%;
+        height: 10px;
+        padding: 3%;
+    }section#Book section div img{
+        height: 250px;
+    }section#Contato article{
+        width: 100%;
+    }section#Contato div#contato-frase{
+        width: 90%;
+    }footer{
+        height: 150px;
+        text-align: center;
+    }footer a {
+        width: 25%;
+    }.assinatura {
+        width: 100%;
+    }
+}
+
 /* Tablet */
 @media screen and (min-width: 750px) {
-    .carousel{
+    nav{
+        width: 60%;
+    }.carousel{
         display: none;
     }.mobile2{
         display: inline-block;
@@ -66,5 +120,31 @@ A companha o Termos de uso do Site.
         display: inline-block;
     }.mobile{
         display: none;
+    }section#Contato div#contato-frase div#frase p{
+        font-size: large;
+    }section#Contato div#contato-frase img{
+        width: 90%;
+        height: 300px;
+    }section#Contato article a:hover{
+        font-size: large;
+    }footer{
+        height: 150px;
+        text-align: center;
+    }footer a {
+        width: 25%;
+    }.assinatura {
+        width: 100%;
     }
 }
+
+/* PC tela grande*/
+@media screen and (min-width: 1000px) {
+    .logo {
+        width: 30%;
+    }
+    nav{
+        width: 70%;
+        text-align: right;
+    }
+}
+

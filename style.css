@@ -68,6 +68,7 @@ hr {
 p {
     font-family: 'Red Hat Display', sans-serif;
     color: black;
+    padding: 2%;
     font-size: var(--paragrafo-size);
     text-align: center;  
 }
@@ -98,6 +99,9 @@ img:hover,.carousel img:hover {
 }
 
 /* Classes */
+.logo {
+    width: 10%;
+}
 .ico{
     border-radius: 5px;
     padding-left: 0.5%;
@@ -127,11 +131,12 @@ nav {
     font-family: 'Philosopher', sans-serif;
     display: inline-block;
     text-align: right;
+    margin-right: 1%;
     font-size: var(--menu-size);
 }
 nav li {
     display: inline-block;
-    padding-left: 5%;
+    padding-left: 3%;
 }
 nav a {
     font-family: 'Philosopher', sans-serif;
