@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port. Talita</title>
+
+   
+   
+    <!-- Slick Externo -->
+    <script src="Slick/jquery-1.11.0.min.js"></script>
+    <script src="Slick/jquery-migrate-1.2.1.min.js"></script>
+    <script src="Slick/slick.js"></script>
+    <!-- Slick Css-->
+    <link rel="stylesheet" href="Slick/slick.css">
+    <link rel="stylesheet" href="Slick/slick-theme.css">
+
+    <!-- Conteudos Internos -->
+    <link rel="shortcut icon" href="./icons/Logo-Portifolio-Talita.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resize.css">
+
+   
+    
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <a href="./index.html" class="logo" data-scroll><h1>Talita A. Santos</h1></a>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Book">Book</a></li>
+                <li><a href="#Videos">Vídeos</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+
+    <!-- Home -->
+    <section id="Home">
+        <h2>Bem-Vindo</h2>
+        <p>Esse site e usado para mostar meu perfil como<br>
+            modelo, com fotos de book, trabalhos fotograficos e video.</p>
+
+        <div id="esquerda">
+            <!-- Informação do Perfil -->
+            <article id="informacao">
+                <h3>Perfil</h3>
+                <p>
+                    <b>Naturalidade:</b> Luziânia-GO.<br>
+                    <b>Cabelos:</b> loiros<br>
+                    <b>Manequim:</b> 34<br>
+                    <b>Altura:</b> 1,67 m <br>
+                    <b>Olhos:</b> verdes <br>
+                    <b>Peso:</b> 51 kg
+                </p>
+
+                <div>
+                    <a href="">
+                        <img class="ico" src="./icons/intagram-logo.png" alt="Instagram Talita">
+                    </a>
+                    <a href="">
+                        <img class="ico" src="./icons/faceboock-1.png" alt="Faceboock Talita">
+                    </a>
+                    <a href="">
+                        Talita Snts
+                    </a>
+                    <br>
+                    <a href="">
+                        <img class="ico" src="./icons/gmail.png" alt="Gmail Talita">
+                        talita.snts03@gmail.com
+                    </a>
+                </div>
+
+            </article>
+        </div>        
+
+        <article id="direita">
+            <!-- Imagens Lateral-->
+            <div id="imagens-home" class="mobile2" >
+                <img src="img/imagem loira rosto.jpg" alt="" onclick="Zoom('img1')" id="img1">
+                <img src="img/imagem mulher loira modelo.jpg" alt="">
+                <img src="img/imagem mulher loira de braços cruzados.jpg" alt="">
+            </div>
+
+            <div class="carousel">
+                <img src="img/imagem loira rosto.jpg" alt="" onclick="Zoom('img1')" id="img1">
+                <img src="img/imagem mulher loira modelo.jpg" alt="">
+                <img src="img/imagem mulher loira de braços cruzados.jpg" alt="">
+            </div>
+            <script>
+                var largura = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+                $('.carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    
+                });
+            
+            </script>
+        </article>
+
+    </section>
+
+
+    <!-- Boock -->
+    <section id="Book">
+        <h2>Book</h2>
+
+        <hr/>
+        <section>
+            <div>
+                <img src="./img/img 07.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/img 06.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/img 08.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/img 04.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/ft 07.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./img/ft 01.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./img/ft 05.jpeg" alt="">
+            </div>
+            <div>
+                <img src="./img/ft 03.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/img 05.jpg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 02.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 08.jpeg" alt="">
+            </div>
+            <div class="mobile">
+                <img src="./img/ft 04.jpeg" alt="">
+            </div>
+        </section>
+
+        <section id="amplo">
+            <section id="quadrado">
+                <div>
+                    <img src="./img/img 05.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/ft 02.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="./img/ft 08.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="./img/ft 04.jpeg" alt="">
+                </div>
+            </section>
+
+            <section id="lateral">
+                <div>
+                    <img src="./img/inicio.jpeg" alt="">
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+  
+
+    <!-- Vídeos -->
+    <section id="Videos">
+        <h2>Vídeos</h2>
+        <hr/>
+        
+        <div>
+            <article class="videos">
+                <iframe src="https://www.youtube.com/embed/p44n_tY7rHM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </article>
+            
+            <article class="videos">
+                <iframe src="https://www.youtube.com/embed/5Hp5GjXJPbo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+            
+            <article class="videos">
+                <iframe src="https://www.youtube.com/embed/3RJRo-zKGh0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article class="videos">
+                <iframe src="https://www.youtube.com/embed/KlUr7gmh8BY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+
+            <article class="videos">
+                <iframe src="https://www.youtube.com/embed/-Ah74RAFKn0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article>
+        </div>
+        
+    </section>
+    
+
+    <!-- Contato -->  
+    <section id="Contato">
+        <h2>Contato</h2>
+        <hr/>
+
+        <article>
+            <a href=""><img src="./icons/intagram-logo.png" alt=""><b> Talita Snts</b></a>
+            <a href=""><img src="./icons/faceboock-1.png" alt=""><b> Talita Snts</b></a>
+            <a href=""><img src="./icons/linkedin.png" alt=""><b> Talita Snts</b></a>
+            <a href=""><img src="./icons/gmail.png" alt=""><b> talita.snts03@gmail.com</b></a>
+        </article>
+
+        <!-- Frase Lateral -->
+        <div id="contato-frase">
+            <img src="./img/n17.jfif" alt="">
+            <div id="frase" >
+                <p>Para mim, todos nós somos<br>
+                bonitos, na nossa própria<br>
+                maneira.
+                </p>
+                <p id="aultor">Kendall Jenner</p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <hr id="footer"/>
+
+    <!-- Rodape -->
+    <footer>
+        
+        <a href="./privacidade.html">Politica de Privacidade</a>
+        <p>2019-2022 Talita A. Santos</p>
+        <a href="./termos.html">Termos de Uso</a>
+        <a class="assinatura" href="">By Carlos Henrique A. Santos</a>
+    </footer>
+
+
+    <div id="Modal">
+        <div id="Content">
+          <img src="img/re03.jpg" alt="Image 03" />
+          <p id="imageTitle">Title here</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<!-- 
+    ================================================
+        By Carlos Henrique A. Santos
+        Github: https://github.com/CarlosHenrique13/
+        License MIT
+        A companha o Termos de uso do Site.
+    ================================================= 
+-->
