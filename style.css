@@ -16,6 +16,8 @@ A companha o Termos de uso do Site.
     --cor-opacidade: #A27035;
     --cor-opacidade1: #a26f35af;
     --color-footer: #3d1309a6;
+    --color-bar: #a26f35a4;
+    --color-bar2: #3d1309da;
 
     /* Tamanho das Fotes */
     --menu-size: 20px;
@@ -25,6 +27,31 @@ A companha o Termos de uso do Site.
     --rede-social: 25px;
     --rede-social-hover: 27px;
     --paragrafo-size: 20px;
+}
+/* Animação de Rolagem*/
+@media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+}  
+:target {
+    scroll-margin-top: .8em;
+}
+/* Barra de Rolagem */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-bar2) var(--color-bar);
+} 
+*::-webkit-scrollbar {
+    width: 8px;
+}  
+*::-webkit-scrollbar-track {
+    background: var(--color-bar2);
+}
+*::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color:var(--color-bar);
+    
 }
 /* BODY */
 body {
@@ -41,7 +68,7 @@ header {
 }
 h1 {
     font-family: 'Philosopher', sans-serif;
-    padding-left: 1%;
+    padding-left: 3%;
     color: var(--cor-white);
     display: inline-block;
     font-size: var(--logo-size);
@@ -309,10 +336,7 @@ section#Contato div#contato-frase div#frase p#aultor {
 }
 
 /* FOOTER*/
-hr#footer {
-    width: 100%;
-    margin-bottom: 0;
-}
+
 footer {
     position: absolute;
     text-align: center;
@@ -321,6 +345,10 @@ footer {
     height: 80px;
     padding-bottom: 1%;
     background-color: var(--color-footer);
+}
+footer hr {
+    width: 100%;
+    margin-top: 0;
 }
 footer a {
     text-align: center;
@@ -370,6 +398,7 @@ footer p:hover {
     max-height:700px;
     width: auto;
     height: auto;
+    margin: auto;
     border-radius: 5px;
     box-shadow:  0.1em 0.1em 0.5em 0.5em var(--cor-opacidade1);
 }

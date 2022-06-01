@@ -6,45 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js
-    "></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js
-    "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js
-    "></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css
-    ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css
-    ">
-    <style>
-        img{
-            width: 40%;
-        }
-        .carousel{
-            width: 50%;
-        }
-    </style>
+   
     <script>
         var largura = window.screen.width;
-        alert(largura)
+        altura = window.screen.height;
+        alert(largura+" X "+altura)
     </script>
 </head>
 <body>
-    <div class="carousel">
-        <img src="img/imagem loira rosto.jpg" alt="" onclick="Zoom('img1')" id="img1">
-        <img src="img/imagem mulher loira modelo.jpg" alt="">
-        <img src="img/imagem mulher loira de braços cruzados.jpg" alt="">
-      </div>
+   <p>
+       celular: 360x640
+       pc: 1440x900
+       tablet: 2014x600
 
-      <script>
-        $('.carousel').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        });
-    </script>
+   </p>
 </body>
 </html>
