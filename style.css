@@ -352,13 +352,13 @@ footer hr {
 }
 footer a {
     text-align: center;
-    width: 33%;
+    width: 20%;
     display: inline-block;
     font-weight: bold;
     color: var(--cor-white);
 }
 footer p {
-    width: 33%;
+    width: 20%;
     display: inline-block;
     font-weight: bold;
     color: var(--cor-white);
