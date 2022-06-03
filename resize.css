@@ -175,8 +175,6 @@ REDIMENSIONAMENTO
     }section#Contato div#contato-frase img{
         width: 90%;
         height: 300px;
-    }section#Contato article a:hover{
-        font-size: large;
     }footer{
         height: 180px;
         text-align: center;
